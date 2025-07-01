@@ -6,7 +6,7 @@ export default function Dashboard(){
     const { data: session } = useSession();
     return(
         <MainLayout>
-            <div>
+            <div className="flex flex-col gap-2">
                 <span>Access granted because you are signed in.</span>
                 <span>Your email: {session?.user?.email}</span>
                 <span>Your name: {session?.user?.name}</span>
